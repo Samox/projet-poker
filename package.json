@@ -1,0 +1,23 @@
+{
+  "name": "projet-poker",
+  "version": "1.0.0",
+  "description": "Play poker with friends",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samox/projet-poker.git"
+  },
+  "author": "Wadidou, Maxens & Srammy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Samox/projet-poker/issues"
+  },
+  "homepage": "https://github.com/Samox/projet-poker#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.14.0"
+  }
+}
