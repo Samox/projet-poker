@@ -11,6 +11,9 @@ mainApp.config(['$locationProvider', '$routeProvider',
         when('/board', {
           template: '<board></board>'
         }).
+        when('/player/:playerId', {
+          template: '<player></player>'
+        }).
         otherwise('/');
     }
   ]);
