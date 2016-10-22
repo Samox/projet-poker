@@ -8,8 +8,16 @@ mainApp.component('landing', {
   templateUrl: 'templates/landing.html',
   controller: function landingCtrl() {
       this.showBoard = () => {
+        
         console.log('croute');
       };
+    }
+})
+
+mainApp.component('board', {
+  templateUrl: 'templates/board.html',
+  controller: function boardCtrl() {
+      console.log('you are on the board');
     }
 })
 
@@ -20,6 +28,9 @@ mainApp.config(['$locationProvider', '$routeProvider',
       $routeProvider.
         when('/', {
           template: '<landing></landing>'
+        }).
+        when('/board', {
+          template: '<board></board>'
         }).
         otherwise('/');
     }
