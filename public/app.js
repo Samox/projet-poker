@@ -1,9 +1,4 @@
-var mainApp = angular.module('mainApp', ['ngMaterial', 'ngRoute']);
-console.log(mainApp);
-mainApp.controller('mainCtrl', function mainCtrl($scope) {
-  console.log($scope);
-});
-
+var mainApp = angular.module('mainApp', ['ngMaterial', 'ngRoute', 'boardService']);
 
 mainApp.config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {

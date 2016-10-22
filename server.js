@@ -6,8 +6,8 @@ app = express()
 app.use(express.static('public'))
 
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
-app.get('/myFirstApi', (req, res) =>
-  res.send('Hello')
+app.get('/board', (req, res) =>
+  res.send(['Croute', 'LOL'])
 )
 
 app.listen(6969)

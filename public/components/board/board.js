@@ -1,7 +1,9 @@
 mainApp.component('board', {
   templateUrl: 'components/board/board.html',
-  controller: function boardCtrl() {
-
-      console.log('you are on the board');
-    }
+  controller: function boardCtrl(Board) {
+    Board.getBoard().$promise
+    .then(board => {
+      this.board = board
+    })
+  }
 })
